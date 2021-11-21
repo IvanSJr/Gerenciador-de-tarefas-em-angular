@@ -15,9 +15,7 @@ export class ListarTarefasComponent implements OnInit {
 
   ngOnInit() {
     this.tarefas = this.listarTodos();
-    this.tarefas = [
-      new TarefaModel(1, "Estudar Angular Js", false),
-    new TarefaModel(2, "Estudar APIS RESTFULL", true),]
+    this.tarefas = []
   }
 
   listarTodos(): TarefaModel[] {
